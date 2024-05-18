@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>TO DO List</h1>
+    </header>
+    <form action="">
+        <input type="text" name="" class="todo-input" placeholder="write your task here ... .. .">
+        <button type="submit" title="add-button" class="todo-button" onclick="addTodo()">
+            <i class="fas fa-plus-circle fa-lg"></i>
+        </button>
+        <div class="select">
+            <select title="filter_todo" name="todos" class="filter_todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todo_container">
+        <ul class="todo-list"></ul>
+    </div>
+    
+    <footer class="footer">
+        <div class="credit ">
+            created by <span>𝕒𝕙𝕞𝕒𝕕 𝕗𝕒𝕣𝕒𝕔𝕙𝕚</span>!
+        </div>
+    </footer> 
+    <script src="./script.js"></script>
+</body>
+</html>
